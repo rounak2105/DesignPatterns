@@ -31,14 +31,14 @@ public class IPhoneStockObservable implements StockObservable {
 
     @Override
     public void setData(int stock) {
-        if(this.currentStock == 0 && stock > 0) {
+        currentStock = stock;
+        if(stock > 0) {
             notifyObserver();
         }
-        this.currentStock = stock;
     }
 
     @Override
     public int getData() {
-        return this.currentStock;
+        return currentStock;
     }
 }

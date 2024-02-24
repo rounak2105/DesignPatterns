@@ -12,6 +12,6 @@ public class TextObserver implements StockObserver {
     }
     @Override
     public void update() {
-        System.out.println("Sending text to " + phone + " qty is " + this.stockObservable.getData());
+        System.out.println("Sending text to " + phone + " qty is " + stockObservable.getData());
     }
 }

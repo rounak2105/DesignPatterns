@@ -13,6 +13,7 @@ public class ObserverMain {
         StockObserver stockObserver2 = new TextObserver("1234567890", stockObservable);
         stockObservable.addObserver(stockObserver1);
         stockObservable.addObserver(stockObserver2);
+        System.out.println("added all observers");
         stockObservable.setData(100);
         stockObservable.setData(0);
         stockObservable.setData(20);
